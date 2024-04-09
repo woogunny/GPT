@@ -29,9 +29,6 @@ def ask_chatgpt(messages):
   )
   return response.choices[0].message.content
 
-import os
-os.environ["OPENAI_API_KEY"] = "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"
-
 # 파일에서 스크립트 읽기
 with open("transcript.txt", "r") as f:
   transcript = f.read()
